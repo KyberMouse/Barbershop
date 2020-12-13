@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html lang="sk-SK" prefix="og: http://ogp.me/ns#">
+<html lang="sk-SK">
+<head>
+
     <meta charset="UTF-8">
     <title>MichaelVagBarbershop</title>
-    <meta name="description" content="BeBlack is short for beautiful black. A creative OnePager free to use. Created by www.lautenschlager.de">
-    <link rel="author" href="https://lautenschlager.de" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/flexboxgrid.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/theme.css" media="all" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="reviews.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="sample/butter.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 </head>
 <body>
+<div>
+
     <header class="fade-in">
         <div class="navigation-bar flex middle-xs">
             <img src="img/logo.png" class="logo">
             <nav class="end-xs">
                 <ul>
-                    <li><a href="#about-us">O mne</a></li>
-                    <li><a href="#services">Služby</a></li>
+                    <li><a href="#about-us">O nás</a></li>
+                    <li><a href="#services">Služby a Cenník</a></li>
                     <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#benefits">Benefity</a></li>
                     <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#cta">REZERVÁCIA</a></li>
                 </ul>
             </nav>
         </div>
         <div class="hero flex middle-xs" style="background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('img/hero-image.jpg');
     }">
-    <div class="hero-text ">
+    <div class="hero-text " >
         <h1>Michael Vag</h1>
         <p>Ostrihaj sa s dôrazom na trend a módu.</p>
     </div>
@@ -39,19 +45,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md">
-                        <h2 class="section-title">O mne:</h2>
+                        <h2 class="section-title">O nás:</h2>
                     </div>
                 </div>
                 <div class="row margin-bottom ">
                     <div class="col-md">
-                        <p class="highlight">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                        <p class="author">- John Doe</p>
+                        <p class="highlight">Barbershop MichaelVag sa nachádza v centre Nitry. Salón, ktorý má ducha v elegantnom štýle, originálne pre muža, ktorý chce vyzerať dobre a rád sa o seba stará.</p>
+                        <p class="author">- Barbershop MichaelVag</p>
                     </div>
                     <div class="col-md">
-                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <p>V našom barbershope sa strihá, holí, farbí, odfarbuje, brčkavie, styluje a konzultuje. Všetko sa u nás dostanete s dôrazom na profesionalitu a hlavne vždy s priateľským prístupom. Navyše, ako čerešnička na torte je, že od nás môžete odísť aj s nejakým tým kuskom do svojho šatníka značky MATY®.</p>
                     </div>
                     <div class="col-md">
-                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                        <p>Mladý muž, ktorý si navrhuje vlastné, originálne a luxusné pánske oblečenie, ktoré sa šije ručne z kvalitných a exkuzívnych látok.</p>
+                        <p class="author">- MATY®</p>
                     </div>
                 </div>
                 <div class="row team center-xs">
@@ -61,7 +68,9 @@
                             <div class="hover-inner-box">
                                 <div class="hover-content">
                                     <h3>Michael Vag</h3>
-                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                    <p>Jeho snom, kedy si chcel otvoriť vlastný barbershop sa stal skutočnosťou.</p>
+                                    <p>Za každých okolností priateľský a seriózny s individualnym prístupom ku každému zákazníkovy.</p>
+                                    <p> Jeho najsilnejšou stránkou je coloristika a prispôsobenie účesu k individualite zákazníka.</p>
                                     <a href="https://www.facebook.com/jirka.jiri.9847" target="blank" rel="noopener"><img src="img/facebook-icon.svg" class="team-icon"></a> <a href="#!" target="blank" rel="noopener"><img src="img/twitter-icon.svg" class="team-icon"></a>
                                 </div>
                             </div>
@@ -70,12 +79,15 @@
                     </div>
                     <div class="col-md">
                         <div class="hover-outer-box">
-                            <img src="img/Isaac-Desideria.jpg">
+                            <img src="img/adrian_bernat.jpg">
                             <div class="hover-inner-box">
                                 <div class="hover-content">
-                                    <h3>Adrian Bernat</h3>
-                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                                    <a href="#!" target="blank" rel="noopener"><img src="img/facebook-icon.svg" class="team-icon"></a> <a href="#!" target="blank" rel="noopener"><img src="img/twitter-icon.svg" class="team-icon"></a>
+                                    <h3>Adrián Bernát</h3>
+                                    <p> Mladý, ambiciózny a kreativny chalan,ktorý si ide svoj sen v "barberlive"...</p>
+                                    <p>   Hravo si poradí aj s tými najmenšími.</p>
+                                    <p>   Adrián je tá správna voľba, hlavne tých, ktorý uprednostňujú ležérny štýl účesu.</p>
+                                    <p> Jeho najväčšou devízou sú precíznosť a trpezlivosť. </p>
+                                    <a href="https://www.facebook.com/adrian.s.bernat" target="blank" rel="noopener"><img src="img/facebook-icon.svg" class="team-icon"></a> <a href="https://www.instagram.com/adrian_bernat/" target="blank" rel="noopener"><img src="img/twitter-icon.svg" class="team-icon"></a>
                                 </div>
                             </div>
                         </div>
@@ -90,54 +102,129 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 center-xs">
-                        <h2 class="section-title">Služby</h2>
+                        <h2 class="section-title">Služby a Cenník</h2>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="row icon-row">
+                    <div class="col-xs center-xs">
+
+                       <h4> PÁNSKY STRIH </h4>
+                        <p>(Strihanie, umývanie, fúkanie, záverečný styling, úprava obočia)</p>
+                        <h3> 15€ </h3>
+                    </div>
+                    <div class="col-xs center-xs">
+
+                        <h4> KRÁTKY STRIH STROJČEKOM </h4>
+                        <p>(Strihanie strojčekom, umývanie)</p>
+                        <h3> 12€ </h3>
+                    </div>
+                    <div class="col-xs center-xs">
+
+                        <h4> STRIH POLODLHÉ VLASY </h4>
+                        <p>(Strihanie, umývanie, fúkanie, záverečný styling)</p>
+                        <h3> 17€ </h3>
                     </div>
                 </div>
                 <div class="row icon-row">
                     <div class="col-xs center-xs">
-                        <img src="img/Sluzba1.png" class="icon"><br/>
-                        Služba 1
+
+                        <h4> DETSKÝ STRIH</h4>
+                        <p>(Strihanie, umývanie, fúkanie, záverečný styling)</p>
+                        <h3> 12€ </h3>
                     </div>
                     <div class="col-xs center-xs">
-                        <img src="img/Sluzba2.png" class="icon"><br/>
-                        Služba 2
+
+                        <h4>ÚPRAVA BRADY</h4>
+                        <p>(Úprava brady, zaholenie kontúr tváre, prípravok po holení)</p>
+                        <h3> 12€ </h3>
                     </div>
                     <div class="col-xs center-xs">
-                        <img src="img/Sluzba3.png" class="icon"><br/>
-                        Služba 3
+
+                        <h4>FARBENIE BRADY</h4>
+                        <p>(Farbenie brady podľa želania)</p>
+                        <h3> 10€ </h3>
                     </div>
                 </div>
-                 <div class="row icon-row">
-                    <div class="col-xs center-xs">
-                        <img src="img/Sluzba4.png" class="icon"><br/>
-                        Služba 4
-                    </div>
-                    <div class="col-xs center-xs">
-                        <img src="img/Sluzba5.png" class="icon"><br/>
-                        Služba 5
-                    </div>
+                <div class="col-xs center-xs">
+                <img src="img/Sluzba1.png" class="icon"><br/>
                 </div>
-                <div class="row margin-bottom ">
-                    <div class="col-md">
-                        <p class="highlight">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                        <p class="author">- John Doe</p>
-                    </div>
-                    <div class="col-md">
-                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    </div>
-                    <div class="col-md">
-                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+
+                <div class="row icon-row">
+                    <div class="col-xs center-xs">
+
+                        <h4> ODFARBENIE VLASOV </h4>
+                        <p>(Odfarbenie vlasov podľa želania, strih a konečný styling)</p>
+                        <h3> 50€ </h3>
                     </div>
                 </div>
             </div>
         </section>
+
+
+        <div class="container">
+            <h2>Reviews</h2>
+            <p>Check out the below reviews for our website.</p>
+
+
+            <div  class="reviews" ></div>
+            <div class="container" id="overflowTest">
+            <script>
+                const reviews_page_id = 1;
+                fetch("reviews.php?page_id=" + reviews_page_id).then(response => response.text()).then(data => {
+                    document.querySelector(".reviews").innerHTML = data;
+                    document.querySelector(".reviews .write_review_btn").onclick = event => {
+                        event.preventDefault();
+                        document.querySelector(".reviews .write_review").style.display = 'block';
+                        document.querySelector(".reviews .write_review input[name='name']").focus();
+                    };
+                    document.querySelector(".reviews .write_review form").onsubmit = event => {
+                        event.preventDefault();
+                        fetch("reviews.php?page_id=" + reviews_page_id, {
+                            method: 'POST',
+                            body: new FormData(document.querySelector(".reviews .write_review form"))
+                        }).then(response => response.text()).then(data => {
+                            document.querySelector(".reviews .write_review").innerHTML = data;
+                        });
+                    };
+                });
+            </script>
+            </div>
+        </div>
         <section class="cta middle-xs">
             <div class="container">
                 <div class="row middle-md">
                     <div class="col-md-8">
                         <h2>Objednaj sa online</h2>
                         <p>Využi možnosť objednať sa hneď teraz pomocou služby Bookio. Vyber si z ktoréhokoľvek voľného termínu a prídi sa dať ostrihať </p>
-                        <a href=""><button class="light">Objednať sa</button></a>
+                        <a href="https://services.bookio.com/barbershop-michaelvag-2r2smguj/widget"><button class="light">Objednať sa</button></a>
                     </div>
                     <div class="col-md-4">
                         <img src="img/cta-display.png" class="display">
@@ -150,7 +237,7 @@
                 <div class="row center-xs">
                     <div class="col-md">
                         <h2 class="section-title">Portfólio</h2>
-                        <p>Tu si môžeš prezrieť výsledky mojej práce.</p>
+                        <h4>Tu si môžeš prezrieť výsledky našej práce.</h4>
                     </div>
                 </div>
             </div>
@@ -232,64 +319,13 @@
                     </div>
                 </div>
             </section>
-            <section class="cta">
+            <section class="cta" id="cta">
                 <div class="container">
                     <div class="row center-xs">
                         <div class="col-md">
-                            <h2>Call to action</h2>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                            <a href=""><button class="light">Aktívne tlačidlo</button></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="blurbs" id="benefits">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md center-xs">
-                            <h2 class="section-title">Benefits</h2>
-                        </div>
-                    </div>
-                    <div class="row margin-bottom-small center-xs">
-                        <div class="col-md">
-                            <img src="img/001-achievement.svg" class="icon ">
-                            <h3>Benefit 1</h3>
-                            <p>Lorem ipsum dolor sit amet, c-r adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim. </p>
-                        </div>
-                        <div class="col-md">
-                            <img src="img/002-pencil.svg" class="icon">
-                            <h3>Benefit 2</h3>
-                            <p>Lorem ipsum dolor sit amet, c-r adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim. </p>
-                        </div>
-                        <div class="col-md">
-                            <img src="img/003-idea.svg" class="icon">
-                            <h3>Benefit 3</h3>
-                            <p>Lorem ipsum dolor sit amet, c-r adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim. </p>
-                        </div>
-                    </div>
-                    <div class="row center-xs">
-                        <div class="col-md">
-                            <img src="img/004-shopping-bag.svg" class="icon">
-                            <h3>Benefit 4</h3>
-                            <p>Lorem ipsum dolor sit amet, c-r adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim. </p>
-                        </div>
-                        <div class="col-md">
-                            <img src="img/005-fountain-pen.svg" class="icon">
-                            <h3>Benefit 5</h3>
-                            <p>Lorem ipsum dolor sit amet, c-r adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim. </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="newsletter">
-                <div class="container">
-                    <div class="row center-xs">
-                        <div class="col-md ">
-                            <h2>Náš newsletter</h2>
-                            <form class="flex center-xs">
-                                <input placeholder="Váš Email" type="email" required="" name="">
-                                <button>ODOBERAŤ</button>
-                            </form>
+                            <h2>Rezervácia</h2>
+                            <p>Vyber si svoj termín a rezervuj sa online.</p>
+                            <a href="https://services.bookio.com/barbershop-michaelvag-2r2smguj/widget"><button class="light">REZERVÁCIA</button></a>
                         </div>
                     </div>
                 </div>
@@ -336,15 +372,16 @@
             </div>
             <div class="row margin-bottom-small">
                 <div class="col-md-8">
-                    <h3>O mne</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <h3>O nás</h3>
+                    <p>Salón, ktorý má ducha v elegantnom štýle, originálne pre muža, ktorý chce vyzerať dobre a rád sa o seba stará.</p>
+                    <p class="author">- Barbershop MichaelVag</p>
                 </div>
                 <div class="col-md-4">
                     <h3>Odkazy</h3>
                     <ul>
                         <li><a href="#home">Domov</a></li>
-                        <li><a href="#about-us">O mne</a></li>
-                        <li><a href="#services">Služby</a></li>
+                        <li><a href="#about-us">O nás</a></li>
+                        <li><a href="#services">Služby a Cenník</a></li>
                         <li><a href="#portfolio">Portfólio</a></li>
                         <li><a href="#why-us">Prečo práve my</a></li>
                         <li><a href="#contact">Kontakt</a></li>
@@ -353,24 +390,47 @@
             </div>
             <div class="row">
                 <div class="col-md ">
-                    <p>Sledujte ma na <a href="https://www.facebook.com/Barbershop-MichaelVag-114550143320853" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" style="null" class="icon icons8-Facebook-Filled" >    <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"></path></svg>
+                    <p>Sledujte nás na: </p>
+                    <a class="button--svg" href="https://www.facebook.com/Barbershop-MichaelVag-114550143320853" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 46 46" role="img" aria-labelledby="facebook-icon">
+                            <title id="facebook-icon">Facebook</title>
+                            <path fill="#3C599A" d="M18.896 20.12h1.758v-1.708c0-.753.02-1.915.566-2.635.576-.762 1.368-1.28 2.73-1.28 2.218 0 3.15.316 3.15.316l-.438 2.605s-.73-.212-1.417-.212c-.684 0-1.296.245-1.296.93v1.985h2.803l-.194 2.547h-2.61v8.84h-3.297v-8.84h-1.758V20.12z"/>
+                            <path class="button--svg__border" fill="#E5E5E5" d="M23 3c11.027 0 20 8.972 20 20 0 11.027-8.973 20-20 20-11.028 0-20-8.973-20-20C3 11.972 11.972 3 23 3m0-2C10.85 1 1 10.85 1 23s9.85 22 22 22 22-9.85 22-22S35.15 1 23 1z"/>
+                        </svg>
+                    </a>
+                    <a class="button--svg" href="https://instagram.com/barbershop_michaelvag?igshid=13ofame7l499k" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 46 46" role="img" aria-labelledby="instagram-icon">
+                            <title id="instagram-icon">Instagram</title>
+                            <path class="button--svg__border" fill="#E5E5E5" d="M23 3c11.028 0 20 8.972 20 20s-8.972 20-20 20S3 34.028 3 23 11.972 3 23 3m0-2C10.85 1 1 10.85 1 23s9.85 22 22 22 22-9.85 22-22S35.15 1 23 1z"/>
+                            <path fill="#5E6C89" d="M29.76 29.03v-7.373h-1.537c.152.48.23.975.23 1.49 0 .958-.243 1.838-.73 2.647-.485.807-1.146 1.447-1.98 1.918-.834.47-1.744.705-2.73.705-1.495 0-2.773-.514-3.835-1.543-1.062-1.027-1.593-2.27-1.593-3.726 0-.517.076-1.013.228-1.49H16.21v7.373c0 .2.065.37.2.5.13.14.296.2.494.2H29.07c.188 0 .352-.06.488-.2s.202-.3.202-.49zm-3.233-6.064c0-.94-.343-1.743-1.03-2.406-.686-.664-1.515-.996-2.486-.996-.96 0-1.78.332-2.47.996-.68.663-1.03 1.466-1.03 2.406 0 .942.35 1.743 1.03 2.407s1.51.996 2.48.996c.975 0 1.8-.34 2.49-1s1.03-1.47 1.03-2.41zm3.233-4.097v-1.88c0-.22-.076-.4-.23-.56-.15-.158-.336-.235-.556-.235h-1.98c-.22 0-.406.08-.558.233-.15.155-.228.34-.228.552v1.876c0 .22.076.404.228.556s.337.23.558.23h1.98c.22 0 .406-.078.557-.23.16-.15.23-.338.23-.558zm1.98-2.37v12.99c0 .61-.22 1.14-.66 1.58-.44.44-.967.66-1.582.66H16.502c-.614 0-1.142-.22-1.582-.66-.44-.44-.66-.97-.66-1.586V16.5c0-.614.22-1.142.66-1.582.44-.44.967-.66 1.582-.66h12.996c.615 0 1.14.22 1.582.66.44.44.66.967.66 1.58z"/>
+                        </svg>
+                    </a>
                 </div>
 
             </div>
         </div>
+
+
+
+
+
     </footer>
 
     <div class="row secondary-footer">
         <div class="col-md">
-         <p>Michael Vagai © 2020.</p>
+         <p>Michael Vag © 2020.</p>
      </div>
      <div class="col-md end-md">
-         <p><a href="#">Imprint</a> | <a href="#">Data Protection</a></p>                
+         <p><a href="https://www.facebook.com/Barbershop-MichaelVag-114550143320853">Všetky práva vyhradené</a></p>
      </div>
  </div>
+
  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?callback=polyfillsAreLoaded" defer></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script src="js/script.js" defer></script>
+<!--    <script src="src/butter.js"></script>-->
+<!--    <script> butter.init({cancelOnTouch: true}); </script>-->
+</div>
 </body>
 </html>
+
