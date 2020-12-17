@@ -9,8 +9,8 @@ $PORT = '3306';
 try {
     $pdo = new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
 } catch (PDOException $exception) {
-    // If there is an error with the connection, stop the script and display the error.
-    exit('Failed to connect to database!');
+    // ERROR ak sa nepodarí pripojiť
+    exit('Nepodarilo sa pripojiť k databáze');
 }
 
 //Konvertovanie dátumu z databázy na "pred 3ma týždňami"
@@ -38,13 +38,14 @@ if (isset($_GET['page_id'])) {
         // Insert a new review (user submitted form)
         $stmt = $pdo->prepare('INSERT INTO reviews (page_id, name, content, rating, submit_date) VALUES (?,?,?,?,NOW())');
         $stmt->execute([$_GET['page_id'], $_POST['name'], $_POST['content'], $_POST['rating']]);
-        exit('Your review has been submitted!');
+        exit('Vaše hodnotenie bolo odoslané!');
     }
-    // Get all reviews by the Page ID ordered by the submit date
+    // Všetky hodnotenia zobrazené a zoradené podla dátumu
     $stmt = $pdo->prepare('SELECT * FROM reviews WHERE page_id = ? ORDER BY submit_date DESC');
     $stmt->execute([$_GET['page_id']]);
     $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    // Get the overall rating and total amount of reviews
+
+    // Celkové hodnotenie na základe priemeru všetkých hodnotení
     $stmt = $pdo->prepare('SELECT AVG(rating) AS overall_rating, COUNT(*) AS total_reviews FROM reviews WHERE page_id = ?');
     $stmt->execute([$_GET['page_id']]);
     $reviews_info = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -58,13 +59,13 @@ if (isset($_GET['page_id'])) {
     <span class="stars"><?=str_repeat('&#9733;', round($reviews_info['overall_rating']))?></span>
     <span class="total"><?=$reviews_info['total_reviews']?> reviews</span>
 </div>
-<a href="#" class="write_review_btn">Write Review</a>
+<a href="#" class="write_review_btn">Napíšte hodnotenie</a>
 <div class="write_review">
     <form>
-        <input name="name" type="text" placeholder="Your Name" required>
-        <input name="rating" type="number" min="1" max="5" placeholder="Rating (1-5)" required>
-        <textarea name="content" placeholder="Write your review here..." required></textarea>
-        <button type="submit">Submit Review</button>
+        <input name="name" type="text" placeholder="Vaše meno" required>
+        <input name="rating" type="number" min="1" max="5" placeholder="Hodnotenie (1-5)" required>
+        <textarea name="content" placeholder="Napíšte svoje hodnotenie sem..." required></textarea>
+        <button type="submit">Odoslať hodnotenie</button>
     </form>
 </div>
 
